@@ -1,0 +1,30 @@
+# Create Instruction Files
+
+- Create each instruction as a single markdown file in `./instructions/`.
+- Use the filename pattern `[name].agent.md` with hyphen-separated verbs in the first position.
+- Keep each instruction focused on one workflow or responsibility.
+- Write short, direct bullet points; avoid long explanations.
+- Use English for instruction content unless the user asks otherwise.
+- Place the root catalog in `./instructions/main.agent.md`.
+- Add each new instruction to the root catalog with a one-line description.
+- Include optional `+ Keywords` entries for user-trigger matching.
+- Include optional `+ Target` entries for files or folders the instruction applies to.
+- Include optional `+ Exceptions` entries for edge cases or exclusions.
+- Use a simple structure like:
+  - `- [./instructions/name.agent.md](./name.agent.md) — short description.`
+  - `+ Keywords: word1, word2`
+  - `+ Target: src/**/*.ts`
+  - `+ Exceptions: only when ...`
+- Keep instructions practical and actionable, not conceptual.
+- Prefer reusable, composable workflows over monolithic instructions.
+- Reference shared instructions with relative paths like `./instructions/shared.agent.md`.
+- Update the root catalog whenever a new instruction is added or removed.
+- When editing an existing instruction, read it first and patch only the missing pieces.
+- Preserve useful current content and add new guidance incrementally.
+- Use the same format across all instruction files for predictable agent behavior.
+- When needed, create IDE-specific wrappers in `.github/prompts/`, `.cursor/rules/`, or `.claude/commands/`.
+- Ensure wrappers reference the instruction files using the correct platform syntax.
+- Keep instruction files version-agnostic and tool-agnostic when possible.
+- Maintain a clean separation between instruction logic and IDE-specific glue.
+- Prefer a root catalog plus leaf instructions over a single long instruction file.
+- Test practical examples before finalizing them in the instruction content.
