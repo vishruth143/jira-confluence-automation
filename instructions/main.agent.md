@@ -10,6 +10,9 @@ Each entry below is an instruction file with a one-line description.
 - [`./instructions/creating-instructions.agent.md`](./creating-instructions.agent.md) — defines the standard pattern for creating reusable project instruction files and catalogs.
   + Keywords: create instruction, add instruction, build instruction, instruction template
 
+- [`./instructions/report-writing-constraints.agent.md`](./report-writing-constraints.agent.md) — defines the shared writing rules used by status-report generation and formatting instructions.
+  + Keywords: markdown, bullet list, constraints, report writing, professional tone
+
 - [`./instructions/validate-weekly-inputs.agent.md`](./validate-weekly-inputs.agent.md) — validates weekly status inputs and blocks incomplete or ambiguous reporting data before generation.
   + Keywords: validate inputs, weekly validation, report config, input checks
 
