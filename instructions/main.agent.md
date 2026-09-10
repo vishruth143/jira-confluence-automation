@@ -21,3 +21,9 @@ Each entry below is an instruction file with a one-line description.
 
 - [`./instructions/render-weekly-report.agent.md`](./render-weekly-report.agent.md) — converts structured data into concise Markdown status reports with required constraints.
   + Keywords: render report, markdown output, status report generation, summary formatting
+
+- [`./instructions/use-reporting-period.agent.md`](./use-reporting-period.agent.md) — calculates current and prior Monday-to-Sunday reporting periods from a reference date.
+  + Keywords: reporting period, week calculation, prior period, date range
+
+- [`./instructions/use-report-metrics.agent.md`](./use-report-metrics.agent.md) — calculates delivery metrics from normalized issue data without fabricating missing values.
+  + Keywords: report metrics, issue metrics, throughput, backlog, story points
