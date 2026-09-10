@@ -27,3 +27,6 @@ Each entry below is an instruction file with a one-line description.
 
 - [`./instructions/use-report-metrics.agent.md`](./use-report-metrics.agent.md) — calculates delivery metrics from normalized issue data without fabricating missing values.
   + Keywords: report metrics, issue metrics, throughput, backlog, story points
+
+- [`./instructions/validate-instructions.agent.md`](./validate-instructions.agent.md) — validates every instruction file against practical structure, workflow, and failure-handling checks.
+  + Keywords: validate instructions, instruction review, consistency checks, batch validation
